@@ -4,7 +4,7 @@ server {
 
     location / {
         include proxy_params;
-        proxy_pass http://unix:/home/ubuntu/flask-tutorial/flask1.sock;
+        proxy_pass http://unix:/home/flask/flask-tutorial/flask1.sock;
 
     }
 
