@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name gayansdeveopsjourney.co.uk www.gayansdeveopsjourney.co.uk;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/ubuntu/flask-tutorial/flask1.sock;
+
+    }
+
+}
